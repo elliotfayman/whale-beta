@@ -1,0 +1,162 @@
+
+html, body {
+overflow-y: scroll;
+	 height: 100%; 
+ }
+ 
+body {
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #ffffff 100%);
+  overflow: hidden;
+}
+
+@font-face {
+	
+}
+
+h1 {
+	
+}
+
+h2,h3,h4,h5 {
+
+font-family: Verdana; 
+}
+
+
+
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #dbb177;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+     .loginbox
+    {
+		width:340px;
+     background: #000;
+     color: #fff;
+     top: 50%;
+     left:50%;
+     position: absolute;
+     transform: translate(-50%, -50%);
+     box-sizing: border-box;
+	 padding: 20px;
+	 border-radius: 10%;
+   }
+   
+  h2
+   {
+     margin: 0;
+     padding: 0 0 10px;
+     text-align: center;
+     font-size: 40px; 
+   }
+
+
+
+  .loginbox input
+  {
+   width: 100%;
+   margin-bottom: 20px;
+  }
+
+  .loginbox input[type="text"], input[type="password"]
+  {
+    border: none;
+
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffefdb;
+    font-size: 16px;
+   }
+
+   .loginbox input[type="submit"]
+  {
+    border: none;
+    outline: none;
+    height: 48px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+   } 
+
+   .loginbox input[type="submit"]:hover
+   {
+     cursor: pointer;
+     background: #ffc107;
+     color: #000;
+   }
+
+   .loginbox a
+   {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+   }
+
+  .loginbox p
+   {
+     margin: 0;
+	 font-size: 30x;
+     padding: 10px;
+     font-weight: bold;
+    }
+    .loginbox a:hover
+    {
+      color: #ffc107;
+     }
+	 .error{
+	     border-bottom:2px solid #ff5e00 !important;
+	 }
+	 
+	 .nonerror{
+	    border: none;
+
+	    border-bottom: 1px solid #ffefdb;
+	    background: transparent;
+	    outline: none;
+	    height: 40px;
+	    color: #ffefdb;
+	    font-size: 16px;
+	 }
